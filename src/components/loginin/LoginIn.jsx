@@ -33,7 +33,7 @@ const LoginIn = () => {
               continue us
             </p>
             <div className={styles.socials}>
-              <FacebookRoundedIcon style={{ marginRight: "1rem", color:"darkblue", borderRadius:"50%", border:"1px solid black", padding:"3px" }}/>
+              <FacebookRoundedIcon style={{ marginRight: "1rem", color:"#3674e4", borderRadius:"50%", border:"1px solid black", padding:"3px" }}/>
               <GoogleIcon style={{ marginRight: "1rem", color:"#69235b", borderRadius:"50%", border:"1px solid black", padding:"3px" }} />
               <AppleIcon style={{ marginRight: "1rem", color: "black", borderRadius:"50%", border:"1px solid black", padding:"3px"}} />
             </div>
