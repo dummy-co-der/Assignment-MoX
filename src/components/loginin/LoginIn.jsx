@@ -11,6 +11,7 @@ const LoginIn = () => {
   return (
     <div className={styles.login}>
       <div className={styles.loginsub}>
+        {/* Animation Section */}
         <div className={styles.anim}>
           <motion.div
             animate={{ y: ["0%", "5%", "0%"] }}
@@ -24,37 +25,50 @@ const LoginIn = () => {
             />
           </motion.div>
         </div>
+
+        {/* Login Content Section */}
         <div className={styles.loginacc}>
-          <a href="/"> <ArrowBackIcon className={styles.arrow} style={{marginLeft:"0.5rem"}}/></a>
+          {/* Back button */}
+          <a href="/">
+            <ArrowBackIcon className={styles.arrow} style={{ marginLeft: "0.5rem" }} />
+          </a>
+
+          {/* Login Content */}
           <div className={styles.login_content}>
             <h2 style={{ marginTop: "4rem" }}> Log in to Mokx </h2>
             <p>
-              Welcome back! Sign in using your social account or email to
-              continue us
+              Welcome back! Sign in using your social account or email to continue us
             </p>
+
+            {/* Social Icons */}
             <div className={styles.socials}>
-              <FacebookRoundedIcon style={{ marginRight: "1rem", color:"#3674e4", borderRadius:"50%", border:"1px solid black", padding:"3px" }}/>
-              <GoogleIcon style={{ marginRight: "1rem", color:"#69235b", borderRadius:"50%", border:"1px solid black", padding:"3px" }} />
-              <AppleIcon style={{ marginRight: "1rem", color: "black", borderRadius:"50%", border:"1px solid black", padding:"3px"}} />
+              <FacebookRoundedIcon style={{ marginRight: "1rem", color: "#3674e4", borderRadius: "50%", border: "1px solid black", padding: "3px" }} />
+              <GoogleIcon style={{ marginRight: "1rem", color: "#69235b", borderRadius: "50%", border: "1px solid black", padding: "3px" }} />
+              <AppleIcon style={{ marginRight: "1rem", color: "black", borderRadius: "50%", border: "1px solid black", padding: "3px" }} />
             </div>
+
+            {/* OR Section */}
             <div className={styles.or}>
               <p style={{ backgroundColor: "gray", height: "0.5px", width: "42%" }} />
-              <span
-                style={{marginTop: "0.5rem", marginLeft: "0.5rem", marginRight: "0.5rem" }} >
-                OR
-              </span>
-              <p style={{ backgroundColor: "gray",height: "0.5px", width: "42%" }} />
+              <span style={{ marginTop: "0.5rem", marginLeft: "0.5rem", marginRight: "0.5rem" }}> OR </span>
+              <p style={{ backgroundColor: "gray", height: "0.5px", width: "42%" }} />
             </div>
+
+            {/* Form Group Section */}
             <div className={styles.form_group}>
               <span className={styles.form_heading}> Your email </span>
-                <TextField id="standard-basic" style={{width:"100%"}} variant="standard" type="email"/>
-              <span className={styles.form_heading} style={{marginTop:"1rem"}}> Password </span>
-                <TextField id="standard-basic" style={{width:"100%"}} variant="standard" type="password" />
+              <TextField id="standard-basic" style={{ width: "100%" }} variant="standard" type="email" />
+              <span className={styles.form_heading} style={{ marginTop: "1rem" }}> Password </span>
+              <TextField id="standard-basic" style={{ width: "100%" }} variant="standard" type="password" />
             </div>
-            <Button style={{ color: "#69235b", backgroundColor: "#f5c75f", textTransform:"none", marginTop:"4rem" }}>
+
+            {/* Login Button */}
+            <Button style={{ color: "#69235b", backgroundColor: "#f5c75f", textTransform: "none", marginTop: "4rem" }}>
               Login
             </Button>
-            <span style={{color:"#f5c75f", marginTop:"1rem"}}> Forgot Password? </span>
+
+            {/* Forgot Password */}
+            <span style={{ color: "#f5c75f", marginTop: "1rem" }}> Forgot Password? </span>
           </div>
         </div>
       </div>
