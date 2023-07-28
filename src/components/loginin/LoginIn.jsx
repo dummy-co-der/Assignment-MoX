@@ -47,7 +47,7 @@ const LoginIn = () => {
             </div>
             <div className={styles.form_group}>
               <span className={styles.form_heading}> Your email </span>
-                <TextField id="standard-basic" style={{width:"100%"}} variant="standard" type="mail"/>
+                <TextField id="standard-basic" style={{width:"100%"}} variant="standard" type="email"/>
               <span className={styles.form_heading} style={{marginTop:"1rem"}}> Password </span>
                 <TextField id="standard-basic" style={{width:"100%"}} variant="standard" type="password" />
             </div>

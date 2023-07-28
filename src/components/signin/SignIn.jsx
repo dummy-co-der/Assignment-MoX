@@ -24,10 +24,10 @@ const SignIn = () => {
           {/* Image and Information Section */}
           <img src="/girl.jpg" alt="namaste" />
           <div className={styles.info}>
-            <h1 className={styles.login_heading}>
+            <h2 className={styles.login_heading}>
               Discover the <br /> timeless wisdom of <br />
               <span className={styles.vedas}>the Vedas.</span>
-            </h1>
+            </h2>
             <p style={{ marginTop: "0", marginBottom: "1rem", color: "white" }}>
               Sign up and
               <span className={styles.vedas}> journey through ancient knowledge with Arya ✨ </span>
@@ -60,11 +60,11 @@ const SignIn = () => {
             </Button>
 
             {/* Existing Account Section */}
-            <p style={{ color: "white", textAlign: "center" }}>
+            <div style={{ color: "white", textAlign: "center", padding:"1.5rem" }}>
               <h4 style={{ marginTop: "0rem" }}>
                 Existing account? <Link to={"/login"} style={{textDecoration:"none"}} className={styles.vedas}> Log in </Link>
               </h4>
-            </p>
+            </div>
           </div>
         </div>
       </div>
