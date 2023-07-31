@@ -16,7 +16,7 @@ const SignIn = () => {
             animate={{ y: ["0%", "5%", "0%"] }}
             transition={{ duration: 3, repeat: Infinity, repeatType: "loop" }}
           >
-            <img src="/splash.png" alt="logo svg" height="500vh" width="500vh" />
+            <img src="/splash.png" alt="logo svg" height="450vh" width="450vh" />
           </motion.div>
         </div>
 
