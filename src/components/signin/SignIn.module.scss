@@ -48,8 +48,8 @@
     width: 50%;
 
     img {
-      height: 53vh;
-      width: 63vh;
+      height: 50%;
+      width: 60%;
     }
   }
 }
@@ -57,6 +57,7 @@
 @media (max-width: 767px) {
   .signinsub {
     flex-direction: column-reverse;
+    margin-top: 0;
   }
 
   .anim {
@@ -67,8 +68,8 @@
     width: 100%;
 
     img {
-      height: 45vh;
-      width: 51vh;
+      height: 50%;
+      width: 100%;
     }
   }
 }
