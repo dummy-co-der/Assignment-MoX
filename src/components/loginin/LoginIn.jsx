@@ -6,6 +6,7 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
 import { Button, TextField } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const LoginIn = () => {
   return (
@@ -63,12 +64,13 @@ const LoginIn = () => {
             </div>
 
             {/* Login Button */}
-            <Button style={{ color: "#69235b", backgroundColor: "#f5c75f", textTransform: "none", marginTop: "4rem" }}>
-              Login
-            </Button>
-
+            <Link to={"/chat"} style={{textDecoration:"none", color: "#69235b" }}>
+              <Button style={{ backgroundColor: "#f5c75f", textTransform: "none", marginTop: "4rem", width:"100%" }}>
+                Login 
+              </Button>
+            </Link>
             {/* Forgot Password */}
-            <span style={{ color: "#f5c75f", marginTop: "1rem" }}> Forgot Password? </span>
+            <span style={{ color: "#f5c75f", marginTop: "1rem", cursor: "pointer"}}> Forgot Password? </span>
           </div>
         </div>
       </div>

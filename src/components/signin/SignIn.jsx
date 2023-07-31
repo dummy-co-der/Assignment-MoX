@@ -53,16 +53,17 @@ const SignIn = () => {
             </div>
 
             {/* "Sign up with mail" Button */}
-            <Button style={{ color: "#69235b", backgroundColor: "#f5c75f", textTransform:"none" }}>
             <Link to={"/signup"} style={{textDecoration:"none"}}>
+            <Button style={{ color: "#69235b", backgroundColor: "#f5c75f", textTransform:"none", width: "100%" }}>
               Sign up with mail
-              </Link>
             </Button>
+            </Link>
 
             {/* Existing Account Section */}
             <div style={{ color: "white", textAlign: "center", padding:"1.5rem" }}>
-              <h4 style={{ marginTop: "0rem" }}>
-                Existing account? <Link to={"/login"} style={{textDecoration:"none"}} className={styles.vedas}> Log in </Link>
+              <h4 style={{ marginTop: "0rem" }}> Existing account? 
+              <Link to={"/login"} style={{textDecoration:"none"}} className={styles.vedas}> Log in 
+              </Link>
               </h4>
             </div>
           </div>
